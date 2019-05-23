@@ -1,0 +1,110 @@
+.bread-bottom {
+    height: 13%;
+    width: 80%;
+    background: linear-gradient($light-orange, darken($light-orange, 10%));
+    border-radius: 0 0 30px 30px;
+    box-shadow: inset -15px 0 $dark-orange;
+    margin: 2% auto;
+}
+
+.bread-top {
+    height: 20%;
+    width: 80%;
+    background: linear-gradient($main-orange, darken($main-orange, 10%));
+    border-radius: 50% 50% 0 0;
+    box-shadow: inset -15px 0 $dark-orange;
+    margin: 2% auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.bread-top__seeds1 {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    background-color: white;
+    left: 30%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(-20deg);
+    box-shadow: inset -2px -3px $light-gray;
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: white;
+        left: -170%;
+        top: -260%;
+        border-radius: 40%;
+        transform: rotate(60deg);
+        box-shadow: inset -1px 2px $light-gray;
+    }
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: white;
+        left: 180%;
+        top: -50%;
+        border-radius: 40%;
+        transform: rotate(60deg);
+        box-shadow: inset -1px -3px $light-gray;
+    }
+}
+
+.bread-top__seeds2 {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    background-color: white;
+    left: 64%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(10deg);
+    box-shadow: inset -3px 0 $light-gray;
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: white;
+        left: 150%;
+        top: -130%;
+        border-radius: 40%;
+        transform: rotate(90deg);
+        box-shadow: inset 1px 3px $light-gray;
+    }
+}
+
+.meat {
+    width: 80%;
+    height: 8%;
+    background: linear-gradient($brown, lighten($brown, 10%));
+    margin: 2% auto;
+    border-radius: 15px;
+}
+
+.cheese {
+    width: 90%;
+    height: 4.5%;
+    margin: 2% auto;
+    background: linear-gradient($yellow, lighten($yellow, 10%));
+    border-radius: 20px;
+}
+
+.salad {
+    width: 85%;
+    height: 7%;
+    margin: 2% auto;
+    background: linear-gradient($green, lighten($green, 10%));
+    border-radius: 20px;
+}
+
+.bacon {
+    width: 80%;
+    height: 3%;
+    background: linear-gradient($light-brown, lighten($light-brown, 10%));
+    margin: 2% auto;
+}
