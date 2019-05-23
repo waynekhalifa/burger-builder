@@ -1,9 +1,13 @@
 @import './base/variables';
 @import './base/base';
+@import './base/mixins';
 @import './components/backdrop';
 @import './components/build-control';
 @import './components/build-controls';
 @import './components/burger';
 @import './components/burger-ingredients';
 @import './components/button';
+@import './components/logo';
 @import './components/modal';
+@import './components/navigation';
+@import './components/toolbar';

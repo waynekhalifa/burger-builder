@@ -1,0 +1,30 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation-item {
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navigation-item__link {
+    color: white;
+    text-decoration: none;
+    height: 100%;;
+    padding: 1.6rem 1rem;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    display: block;
+    &:hover,
+    &:active,
+    &.active {
+        background: $green;
+        border-bottom: 4px solid #4084C8;
+        color: white;
+    }
+}
+
