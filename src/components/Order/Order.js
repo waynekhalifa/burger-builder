@@ -1,10 +1,25 @@
 import React from 'react';
 
-const Order = (props) => (
-    <div className="order">
-        <p>Ingredients: Salad (1)</p>
-        <p>Price: <strong>USD 5.45</strong></p>
-    </div>
-);
+const Order = (props) => {
+    const ingredients = [];
+    for(let ingredientName in props.ingredients ) {
+        ingredients.push(
+            {
+                name: ingredientName,
+                amount: props.ingredients[ingredientName]
+            }
+        );
+    }
+
+    const ingredientOutput = ingredients.map(ig => (
+        <span key={ig.name}>{ig.name} ({ig.amount})</span>
+    ));
+    return (
+        <div className="order">
+            <p>Ingredients: {ingredientOutput}</p>
+            <p>Price: <strong>USD {Number.parseFloat(props.price).toFixed(2)}</strong></p>
+        </div>
+    );
+}
 
 export default Order;
