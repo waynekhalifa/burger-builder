@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Wrapper from './hoc/Wrapper/Wrapper';
-import BurgerBuilder from './components/BurgerBuilder/BurgerBuilder';
 import Toolbar from './components/Navigation/Toolbar/Toolbar';
 import SideDrawer from './components/Navigation/SideDrawer/SideDrawer';
+import { routes } from './routes';
 
 class App extends Component {
     state = {
@@ -22,7 +22,7 @@ class App extends Component {
                     open={this.state.sideDrawer}
                     close={this.sideDrawerClosedHandler} />
                 <main className="main-content">
-                    <BurgerBuilder />
+                    {routes}
                 </main>
             </Wrapper>
         );
