@@ -17,6 +17,7 @@ export const appRoutes = (
 export const protectedRoutes = (
     <Switch>
         <Route path="/checkout" component={Checkout} />
+        <Route path="/my-account" component={Auth} />
         <Route path="/orders" component={Orders} />
         <Route path="/logout" component={Logout} />
         <Route path="/" exact component={BurgerBuilder} />
