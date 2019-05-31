@@ -10,14 +10,21 @@ class App extends Component {
     state = {
         sideDrawer: false
     }
+
+    componentDidMount () {
+        this.props.onTryAutoSignup();
+    }
+
     sideDrawerToggleHandler = () => {
         this.setState( ( prevState ) => {
             return { sideDrawer: !prevState.sideDrawer };
-        } );
+        });
     }
+
     sideDrawerClosedHandler = () => {
         this.setState(() => ({ sideDrawer: false }));
     }
+    
     render() {
         let routes = appRoutes;
         if ( this.props.isAuthenticated ) {
