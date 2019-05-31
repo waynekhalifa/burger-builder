@@ -12,7 +12,7 @@ class App extends Component {
     }
     sideDrawerToggleHandler = () => {
         this.setState( ( prevState ) => {
-            return { showSideDrawer: !prevState.showSideDrawer };
+            return { sideDrawer: !prevState.sideDrawer };
         } );
     }
     sideDrawerClosedHandler = () => {
