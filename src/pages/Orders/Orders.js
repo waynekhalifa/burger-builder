@@ -5,6 +5,7 @@ import Order from '../../components/Order/Order';
 import Spinner from '../../components/UI/Spinner/Spinner';
 import axios from '../../axios-orders';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
+import Wrapper from '../../hoc/Wrapper/Wrapper';
 import * as actions from '../../store/actions';
 
 class Orders extends Component {
@@ -23,9 +24,9 @@ class Orders extends Component {
             ));
         }
         return (
-            <div>
+            <Wrapper>
                 {orders}
-            </div>
+            </Wrapper>
         );
     }
 }

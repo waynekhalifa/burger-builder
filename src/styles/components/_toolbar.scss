@@ -4,12 +4,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: $dark-orange;
+    background: #703B09;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
     box-sizing: border-box;
+    z-index: 199;
 }
 
 .toolbar__logo {

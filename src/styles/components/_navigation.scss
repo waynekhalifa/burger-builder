@@ -39,10 +39,10 @@
     &:hover,
     &:active,
     &.active {
-        background: $green;
+        background: #8F5C2C;
         @include atTablet {
-            background: $green;
-            border-bottom: 4px solid #4084C8;
+            background: #8F5C2C;
+            border-bottom: 4px solid $brownish;
             color: white;
         }
     }

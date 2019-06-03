@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import Wrapper from '../../hoc/Wrapper/Wrapper';
 import CheckoutSummary from '../../components/CheckoutSummary/CheckoutSummary';
 import ContactData from '../../components/ContactData/ContactData';
 
@@ -18,7 +19,7 @@ class Checkout extends Component {
         if ( this.props.ings ) {
             const puchasedRedirect = this.props.purchased ? <Redirect to="/" /> : null;
             summary = (
-                <div>
+                <Wrapper>
                     {puchasedRedirect}
                     <CheckoutSummary
                         ingredients={this.props.ings}
@@ -27,7 +28,7 @@ class Checkout extends Component {
                     <Route 
                         path={this.props.match.path + '/contact-data'} 
                         component={ContactData} />
-                </div>
+                </Wrapper>
             );
         }
         return summary;

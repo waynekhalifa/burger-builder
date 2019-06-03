@@ -1,5 +1,4 @@
 import React from 'react';
-import Wrapper from '../../hoc/Wrapper/Wrapper';
 import Button from '../UI/Button/Button';
 
 const OrderSummary = ( props ) => {
@@ -10,7 +9,7 @@ const OrderSummary = ( props ) => {
             </li>
         ));
     return (
-        <Wrapper>
+        <div className="order-summary">
             <h1>Your Order</h1>
             <p>A delicious burger with the following ingredients:</p>
             <ul>
@@ -23,7 +22,7 @@ const OrderSummary = ( props ) => {
             <Button
                 btnType="success"
                 onClick={props.purchasedContinued}>CONTINUE</Button>
-        </Wrapper>
+        </div>
     );
 }
 

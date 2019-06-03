@@ -1,0 +1,22 @@
+.order-summary {
+    ul {
+        padding: 2rem;
+    }
+}
+
+.order {
+    width: 80%;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px #ccc;
+    padding: 1rem;
+    margin: 1rem auto;
+    box-sizing: border-box;
+
+    span {
+        border: 1px solid #CCC;
+        display: inline-block;
+        margin: 0 .8rem;
+        padding: .5rem;
+        text-transform: capitalize;
+    }
+}

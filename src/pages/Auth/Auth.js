@@ -117,7 +117,7 @@ class Auth extends Component {
         }
 
         return (
-            <div>
+            <div className="auth">
                 {authRedirect}
                 {errorMessage}
                 {form}
